@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>3D Dinosaur Game</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="base.css">
+</head>
+
+<body>
+  <script src="./main.js" type="module">
+  </script>
+  <div class="container" id="container">
+    <div class="ui">
+      <div class="score-layout">
+        <div class="score-text" id="score-text">
+          00000
+        </div>
+      </div>
+    </div>
+    <div class="ui">
+      <div class="game-over-layout" id="game-over">
+        <div class="game-over-text">GAME OVER</div>
+        <div id="replay">Replay</div>
+      </div>
+    </div>
+    <div class="ui">
+      <div class="game-menu-layout" id="game-menu">
+        <div class="game-menu-window">
+          <img src="./resources/cover.jpg"></img>
+          <h1>3D Dinosaur Game</h1>
+          <!-- <h1>Select a dinosaur (in order as in picture)</h1>
+          <div id="" class="models-list">
+            <div>
+              <input type="radio" name="dino-model" value="Apatosaurus" id="1" />
+              <label for="1">Apatosaurus</label>
+            </div>
+            <div>
+              <input type="radio" name="dino-model" value="Trex" id='2' />
+              <label for="2">Trex</label>
+            </div>
+            <div>
+              <input type="radio" name="dino-model" value="Stegosaurus" id="3" />
+              <label for="3">Stegosaurus</label>
+            </div>
+            <div>
+              <input type="radio" name="dino-model" value="Triceratops" id="4" />
+              <label for="4">Triceratops</label>
+            </div>
+            <div>
+              <input type="radio" name="dino-model" value="Parasaurolophus" id='5' />
+              <label for="5">Parasaurolophus</label>
+            </div>
+            <div>
+              <input type="radio" name="dino-model" value="Velociraptor" checked id='6' />
+              <label for="6">Velociraptor</label>
+            </div>
+          </div> -->
+          <h1 id="play">Play</h1>
+          <p>Note: Press space to jump</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <audio id="jump-sound">
+    <source src="./resources/Sounds/jump.wav" type="audio/wav">
+  </audio>
+  <audio id="die-sound">
+    <source src="./resources/Sounds/die.wav" type="audio/wav">
+  </audio>
+  <audio id="point-sound">
+    <source src="./resources/Sounds/point.wav" type="audio/wav">
+  </audio>
+  <audio id="bg-sound" loop>
+    <source src="./resources/Sounds/bg.mp3" type="audio/mp3">
+  </audio>
+</body>
+
+</html>
